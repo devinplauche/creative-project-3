@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Browse from '../views/Browse.vue'
-import Cart from '../views/Cart.vue'
+import Cart from '../views/Deck.vue'
 
 Vue.use(VueRouter)
 
@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
   path: '/browse',
@@ -18,8 +18,8 @@ const routes = [
   component: Browse
   },
   {
-    path: '/cart',
-    name: 'Cart',
+    path: '/deck',
+    name: 'Deck',
     component: Cart
   },
 ]

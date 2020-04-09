@@ -2,36 +2,36 @@
 <div>
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
-      <li class="pure-menu-item"><a @click="select('United States')" href="#" class="pure-menu-link">United States</a></li>
-      <li class="pure-menu-item"><a @click="select('Canada')" href="#" class="pure-menu-link">Canada</a></li>
-      <li class="pure-menu-item"><a @click="select('Mexico')" href="#" class="pure-menu-link">Mexico</a></li>
-      <li class="pure-menu-item"><a @click="select('Brazil')" href="#" class="pure-menu-link">Brazil</a></li>
+      <li class="pure-menu-item"><a @click="select('Common')" href="#" class="pure-menu-link">Common</a></li>
+      <li class="pure-menu-item"><a @click="select('Rare')" href="#" class="pure-menu-link">Rare</a></li>
+      <li class="pure-menu-item"><a @click="select('Epic')" href="#" class="pure-menu-link">Epic</a></li>
+      <li class="pure-menu-item"><a @click="select('Legendary')" href="#" class="pure-menu-link">Legendary</a></li>
     </ul>
   </div>
-  <ProductList :products="products" />
+  <CardList :cards="cards" />
 </div>
 </template>
 
 <script>
-import ProductList from "../components/ProductList.vue"
+import CardList from "../components/CardList.vue"
 export default {
   name: 'Browse',
   components: {
-    ProductList
+    CardList
   },
   data() {
     return {
-      country: '',
+      rarity: '',
     }
   },
   computed: {
-    products() {
-      return this.$root.$data.products.filter(product => product.country === this.country);
+    cards() {
+      return this.$root.$data.cards.filter(card => card.rarity === this.rarity);
     }
   },
   methods: {
-    select(country) {
-      this.country = country;
+    select(rarity) {
+      this.rarity = rarity;
     }
   }
 }

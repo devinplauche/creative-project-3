@@ -7,18 +7,20 @@
       </form>
     </div>
   </div>
-  <ProductList :products="products" />
+
+  <h2> Deck Size for Clash Royale is 8 Unique cards</h2>
+  <CardList :cards="cards" />
   <a href="https://github.com/BYU-CS-260-Winter-2020/lab-3b-grocery-store-devinplauche.git">Github</a>
 </div>
 
 </template>
 
 <script>
-import ProductList from "../components/ProductList.vue"
+import CardList from "../components/CardList.vue"
 export default {
   name: 'Home',
   components: {
-    ProductList
+    CardList
   },
   data() {
     return {
@@ -26,8 +28,9 @@ export default {
     }
   },
   computed: {
-    products() {
-      return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText) >= 0);
+    cards() {
+      console.log(this.$root.$data.cards[0].name)
+      return this.$root.$data.cards.filter(card => card.name.toLowerCase().search(this.searchText) >= 0);
     }
   },
 

@@ -3,20 +3,20 @@
   <div id="menu">
     <div id="brand">
       <router-link to="/">
-        <img src="/images/logo.png">
+        <img src="/images/logo-1.png">
       </router-link>
     </div>
     <div id="side">
       <router-link to="/browse">
         <div class="menu-item browse">
-          <img src="/images/globe.png">
-          <p>Browse</p>
+          <img src="/images/cardlogo.jpeg">
+          <p>Look at cards!</p>
         </div>
       </router-link>
-      <router-link to="/cart">
+      <router-link to="/deck">
         <div class="menu-item">
-          <img src="/images/love.png">
-          <p>{{numberOfItems}} items</p>
+          <img src="/images/decklogo.jpeg">
+          <p>Deck: {{numberOfItems}} items</p>
         </div>
       </router-link>
     </div>
@@ -28,7 +28,7 @@
 export default {
  computed: {
   numberOfItems() {
-   return this.$root.$data.cart.length
+   return this.$root.$data.deck.length
   }
  }
 }
@@ -63,6 +63,7 @@ body {
 
 #brand img {
   height: 200px;
+  margin-right: 50px;
 }
 
 #side {

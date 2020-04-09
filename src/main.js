@@ -6,8 +6,8 @@ import router from './router'
 import mock from './mock-data.js'
 
 let data = {
-  products: mock,
-  cart: [],
+  cards: mock,
+  deck: [],
   quantity: 0,
 
 }

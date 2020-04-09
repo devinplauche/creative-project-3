@@ -1,358 +1,658 @@
 let mock = [{
     id: 1,
-    name: "Egg Salad",
-    price: "$5.62",
-    country: "United States",
-    image: 'egg-salad.jpg'
+    name: "Elite Barbarians",
+    price: "6 Elixir",
+    rarity: "Common",
+    image: "angry_barbarian.png"
   },
   {
     id: 2,
-    name: "Sweet Potato",
-    price: "$2.41",
-    country: "Brazil",
-    image: "sweet-potato.jpg"
+    name: "Archers",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "archers.png"
   },
   {
     id: 3,
-    name: "Foccacia Bread",
-    price: "$5.92",
-    country: "United States",
-    image: 'focaccia.jpg'
+    name: "Baby Dragon",
+    price: "4 Elixir",
+    rarity: "Epic",
+    image: "baby_dragon.png"
   },
   {
     id: 4,
-    name: "Canned Lotus Rootlets",
-    price: "$3.58",
-    country: "United States",
-    image: 'lotus-rootlets.jpg'
+    name: "Mega Knight",
+    price: "7 Elixir",
+    rarity: "Legendary",
+    image: "mega_knight.png"
   },
+
   {
     id: 5,
-    name: "Frilled Toothpicks",
-    price: "$2.47",
-    country: "Canada",
-    image: 'toothpicks.jpg'
-
+    name: "Goblin Cage",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "goblin_cage.png"
   },
   {
     id: 6,
-    name: "Rubbed Sage",
-    price: "$8.77",
-    country: "Brazil",
-    image: 'sage-rubbed.jpg'
+    name: "Barbarian Barrel",
+    price: "2 Elixir",
+    rarity: "Epic",
+    image: "barb_barrel.png"
   },
   {
     id: 7,
-    name: "Langers Mango Nectar",
-    price: "$9.24",
-    country: "Brazil",
-    image: 'mango-nectar.jpg'
+    name: "Barbarian Hut",
+    price: "7 Elixir",
+    rarity: "Rare",
+    image: "barbarian_hut.png"
   },
   {
     id: 8,
-    name: "Cucumber",
-    price: "$3.02",
-    country: "Canada",
-    image: 'cucumber.jpg'
+    name: "Barbarians",
+    price: "5 Elixir",
+    rarity: "Common",
+    image: "barbarians.png"
   },
   {
     id: 9,
-    name: "Fava Beans",
-    price: "$4.76",
-    country: "Brazil",
-    image: 'fava-beans.jpg'
-
+    name: "Bats",
+    price: "2 Elixir",
+    rarity: "Common",
+    image: "bats.png"
   },
   {
     id: 10,
-    name: "Coconut",
-    price: "$2.50",
-    country: "Brazil",
-    image: 'coconut.jpg'
+    name: "Battle Healer",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "battle_healer.png"
   },
   {
     id: 11,
-    name: "Kettle Potato Chips",
-    price: "$6.70",
-    country: "United States",
-    image: "potato-chips.jpg"
+    name: "Battle Ram",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "battle_ram.png"
   },
   {
     id: 12,
-    name: "Flour - Rye",
-    price: "$1.14",
-    country: "Canada",
-    image: "rye-flour.jpg"
+    name: "Dart Goblin",
+    price: "3 Elixir",
+    rarity: "Rare",
+    image: "blowdart_goblin.png"
   },
   {
     id: 13,
-    name: "Feta Chees",
-    price: "$6.92",
-    country: "Brazil",
-    image: "feta-cheese.jpg"
+    name: "Bomb Tower",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "bomb_tower.png"
   },
   {
     id: 14,
-    name: "Cheddar Cheese",
-    price: "$5.36",
-    country: "Mexico",
-    image: "cheddar-cheese.jpg"
+    name: "Bomber",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "bomber.png"
   },
   {
     id: 15,
-    name: "Capers",
-    price: "$4.18",
-    country: "United States",
-    image: "capers.jpg"
+    name: "Bowler",
+    price: "5 Elixir",
+    rarity: "Epic",
+    image: "bowler.png"
   },
   {
     id: 16,
-    name: "Baguette",
-    price: "$9.18",
-    country: "Mexico",
-    image: "baguette.jpg"
+    name: "Elixir Collector",
+    price: "6 Elixir",
+    rarity: "Rare",
+    image: "building_elixir_collector.png"
   },
   {
     id: 17,
-    name: "Lasagna Noodles",
-    price: "$4.73",
-    country: "Brazil",
-    image: "lasagna-pasta.jpg"
+    name: "Inferno Tower",
+    price: "5 Elixir",
+    rarity: "Rare",
+    image: "building_inferno.png"
   },
   {
     id: 18,
-    name: "Pied De Vents Cheese",
-    price: "$5.16",
-    country: "Canada",
-    image: "pied-de-vents.jpg"
+    name: "Mortar",
+    price: "4 Elixir",
+    rarity: "Common",
+    image: "building_mortar.png"
   },
   {
     id: 19,
-    name: "Sweet Potato Crackers",
-    price: "$6.81",
-    country: "United States",
-    image: "crackers.jpg"
+    name: "Tesla",
+    price: "4 Elixir",
+    rarity: "Common",
+    image: "building_tesla.png"
   },
   {
     id: 20,
-    name: "Mushrooms",
-    price: "$8.62",
-    country: "United States",
-    image: "mushrooms.jpg"
+    name: "Xbow",
+    price: "6 Elixir",
+    rarity: "Epic",
+    image: "building_xbow.png"
   },
   {
     id: 21,
-    name: "Jerusalem Artichoke",
-    price: "$3.16",
-    country: "United States",
-    image: "jerusalem-artichoke.jpg"
+    name: "Cannon Cart",
+    price: "5 Elixir",
+    rarity: "Epic",
+    image: "cannon_cart.png"
   },
   {
     id: 22,
-    name: "Leather Leaf Fern",
-    price: "$9.41",
-    country: "Brazil",
-    image: "leather-leaf.jpg"
+    name: "Cannon",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "chaos_cannon.png"
   },
   {
     id: 23,
-    name: "Dried Apricots",
-    price: "$7.42",
-    country: "Brazil",
-    image: "dried-apricots.jpg"
+    name: "Balloon",
+    price: "5 Elixir",
+    rarity: "Epic",
+    image: "chr_balloon.png"
   },
   {
     id: 24,
-    name: "Navel Orange",
-    price: "$3.53",
-    country: "Brazil",
-    image: "navel-orange.jpg"
+    name: "Golem",
+    price: "8 Elixir",
+    rarity: "Epic",
+    image: "chr_golem.png"
   },
   {
     id: 25,
-    name: "Sunflower Oil",
-    price: "$1.90",
-    country: "Mexico",
-    image: "sunflower-oil.jpg"
+    name: "Witch",
+    price: "5 Elixir",
+    rarity: "Epic",
+    image: "chr_witch.png"
   },
   {
     id: 26,
-    name: "Black Turtle Beans",
-    price: "$4.67",
-    country: "Canada",
-    image: "turtle-beans.jpg"
+    name: "Clone",
+    price: "3 Elixir",
+    rarity: "Epic",
+    image: "copy.png"
   },
   {
     id: 27,
-    name: "Bananas",
-    price: "$2.64",
-    country: "Canada",
-    image: "bananas.jpg"
-
+    name: "Dark Prince",
+    price: "4 Elixir",
+    rarity: "Epic",
+    image: "dark_prince.png"
   },
   {
     id: 28,
-    name: "Salami",
-    price: "$8.72",
-    country: "Brazil",
-    image: "salami.jpg"
+    name: "Night Witch",
+    price: "4 Elixir",
+    rarity: "Legendary",
+    image: "dark_witch.png"
   },
   {
     id: 29,
-    name: "Proscuitto",
-    price: "$9.86",
-    country: "Brazil",
-    image: "proscuitto.jpg"
+    name: "Earthquake",
+    price: "3 Elixir",
+    rarity: "Rare",
+    image: "earthquake.png"
   },
   {
     id: 30,
-    name: "Cranberries",
-    price: "$5.85",
-    country: "United States",
-    image: "cranberries.jpg"
-
+    name: "Electro Dragon",
+    price: "5 Elixir",
+    rarity: "Epic",
+    image: "electro_dragon.png"
   },
   {
     id: 31,
-    name: "Canteloupe",
-    price: "$4.49",
-    country: "United States",
-    image: "canteloupe.jpg"
+    name: "Electro Wizard",
+    price: "4 Elixir",
+    rarity: "Legendary",
+    image: "electro_wizard.png"
   },
   {
     id: 32,
-    name: "Lemon",
-    price: "$2.8Lemon5",
-    country: "United States",
-    image: "lemon.jpg"
+    name: "Elixir Golem",
+    price: "3 Elixir",
+    rarity: "Rare",
+    image: "elixir_golem.png"
   },
   {
     id: 33,
-    name: "Pesto",
-    price: "$2.67",
-    country: "Brazil",
-    image: "pesto.jpg"
+    name: "Executioner",
+    price: "5 Elixir",
+    rarity: "Epic",
+    image: "executioner.png"
   },
   {
     id: 34,
-    name: "Grapefruit Juice",
-    price: "$4.88",
-    country: "Brazil",
-    image: "grapefruit-juice.jpg"
-
+    name: "Fireball",
+    price: "4 Elxir",
+    rarity: "Rare",
+    image: "fire_fireball.png"
   },
   {
     id: 35,
-    name: "Curry Paste",
-    price: "$2.02",
-    country: "Brazil",
-    image: "curry-paste.jpg"
+    name: "Goblin Hut",
+    price: "5 Elixir",
+    rarity: "Rare",
+    image: "fire_furnace.png"
   },
   {
     id: 36,
-    name: "Avocado Oil",
-    price: "$4.45",
-    country: "Canada",
-    image: "avocado-oil.jpg"
+    name: "Fire Spirits",
+    price: "2 Elixir",
+    rarity: "Common",
+    image: "fire_spirits.png"
   },
   {
     id: 37,
-    name: "Queso Fresco",
-    price: "$9.24",
-    country: "Canada",
-    image: "queso-fresco.jpg"
+    name: "Firecracker",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "firecracker.png"
   },
   {
     id: 38,
-    name: "Key Lime Pie",
-    price: "$5.32",
-    country: "Mexico",
-    image: "key-lime-pie.jpg"
+    name: "Furnace",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "firespirit_hut.png"
   },
   {
     id: 39,
-    name: "Granny Smith Apple",
-    price: "$2.12",
-    country: "United States",
-    image: "granny-smith.jpg"
+    name: "Fisherman",
+    price: "3 Elixir",
+    rarity: "Legendary",
+    image: "fisherman.png"
   },
   {
     id: 40,
-    name: "Morning Glory Muffin Mix",
-    price: "$9.22",
-    country: "Brazil",
-    image: "muffin-mix.jpg"
+    name: "Flying Machine",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "flying_machine.png"
   },
   {
     id: 41,
-    name: "Heavy Whipping Cream",
-    price: "$8.78",
-    country: "Brazil",
-    image: 'heavy-cream.jpg'
+    name: "Freeze",
+    price: "4 Elixir",
+    rarity: "Epic",
+    image: "freeze.png"
   },
   {
     id: 42,
-    name: "Red Bell Pepper",
-    price: "$9.03",
-    country: "Brazil",
-    image: 'red-bell-pepper.jpg'
+    name: "Ghost King",
+    price: "3 Elixir",
+    rarity: "Legendary",
+    image: "ghost.png"
   },
   {
     id: 43,
-    name: "Perrier",
-    price: "$9.36",
-    country: "United States",
-    image: 'perrier.jpg'
+    name: "Giant Skeleton",
+    price: "6 Elixir",
+    rarity: "Epic",
+    image: "giant_skeleton.png"
   },
   {
     id: 44,
-    name: "Yukon Gold Potatoes",
-    price: "$8.76",
-    country: "Mexico",
-    image: 'yukon-potatoes.jpg'
+    name: "Giant",
+    price: "5 Elixir",
+    rarity: "Rare",
+    image: "giant.png"
   },
   {
     id: 45,
-    name: "Salmon Fillets",
-    price: "$6.21",
-    country: "United States",
-    image: 'salmon-fillets.jpg'
+    name: "Spear Goblins",
+    price: "2 Elixir",
+    rarity: "Common",
+    image: "goblin_archer.png"
   },
   {
     id: 46,
-    name: "Tilapia Fillets",
-    price: "$4.37",
-    country: "Mexico",
-    image: 'tilapia.jpg'
+    name: "Goblin Barrel",
+    price: "3 Elixir",
+    rarity: "Epic",
+    image: "goblin_barrel.png"
   },
   {
     id: 47,
-    name: "Tomato Pesto",
-    price: "$9.70",
-    country: "Brazil",
-    image: 'tomato-pesto.jpg'
+    name: "Goblin Gang",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "goblin_gang.png"
   },
   {
     id: 48,
-    name: "Oil - Olive Bertolli",
-    price: "$8.92",
-    country: "Brazil",
-    image: 'olive-oil.jpg'
+    name: "Goblin Giant",
+    price: "6 Elixir",
+    rarity: "Epic",
+    image: "goblin_giant.png"
   },
   {
     id: 49,
-    name: "Tear Drop Yellow Tomatoes",
-    price: "$3.32",
-    country: "Mexico",
-    image: 'yellow-tomatoes.jpg'
+    name: "Goblins",
+    price: "2 Elxir",
+    rarity: "Common",
+    image: "goblins.png"
   },
   {
     id: 50,
-    name: "Smoked Paprika",
-    price: "$8.31",
-    country: "Brazil",
-    image: 'smoked-paprika.jpg'
-  }
+    name: "Graveyard",
+    price: "5 Elixir",
+    rarity: "Legendary",
+    image: "graveyard.png"
+  },
+  {
+    id: 51,
+    name: "Heal Spirit",
+    price: "1 Elixir",
+    rarity: "Rare",
+    image: "healspirit.png"
+  },
+  {
+    id: 52,
+    name: "Hog Rider",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "hog_rider.png"
+  },
+  {
+    id: 53,
+    name: "Hunter",
+    price: "4 Elixir",
+    rarity: "Epic",
+    image: "hunter.png"
+  },
+  {
+    id: 54,
+    name: "Ice Golem",
+    price: "2 Elixir",
+    rarity: "Rare",
+    image: "ice_golem.png"
+  },
+  {
+    id: 55,
+    name: "Ice Wizard",
+    price: "3 Elixir",
+    rarity: "Legendary",
+    image: "ice_wizard.png"
+  },
+  {
+    id: 56,
+    name: "Inferno Dragon",
+    price: "4 Elixir",
+    rarity: "Legendary",
+    image: "inferno_dragon.png"
+  },
+  {
+    id: 57,
+    name: "Knight",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "knight.png"
+  },
+  {
+    id: 58,
+    name: "Lava Hound",
+    price: "7 Elixir",
+    rarity: "Legendary",
+    image: "lava_hound.png"
+  },
+  {
+    id: 59,
+    name: "Lightning",
+    price: "6 Elixir",
+    rarity: "Epic",
+    image: "lightning.png"
+  },
+  {
+    id: 60,
+    name: "Magic Archer",
+    price: "4 Elixir",
+    rarity: "Legendary",
+    image: "magic_archer.png"
+  },
+  {
+    id: 61,
+    name: "Mega Minion",
+    price: "3 Elixir",
+    rarity: "Rare",
+    image: "mega_minion.png"
+  },
+  {
+    id: 62,
+    name: "Minion Horde",
+    price: "5 Elixir",
+    rarity: "Common",
+    image: "minion_horde.png"
+  },
+  {
+    id: 63,
+    name: "Minions",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "minion.png"
+  },
+  {
+    id: 64,
+    name: "Mirror",
+    price: "? Elixir",
+    rarity: "Epic",
+    image: "mirror.png"
+  },
+  {
+    id: 65,
+    name: "Musketeer",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "musketeer.png"
+  },
+  {
+    id: 66,
+    name: "Arrows",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "order_volley.png"
+  },
+  {
+    id: 67,
+    name: "P.E.K.K.A",
+    price: "7 Elixir",
+    rarity: "Epic",
+    image: "pekka.png"
+  },
+  {
+    id: 68,
+    name: "Poison",
+    price: "4 Elixir",
+    rarity: "Epic",
+    image: "poison.png"
+  },
+  {
+    id: 69,
+    name: "Prince",
+    price: "5 Elixir",
+    rarity: "Epic",
+    image: "prince.png"
+  },
+  {
+    id: 70,
+    name: "Princess",
+    price: "3 Elixir",
+    rarity: "Legendary",
+    image: "princess.png"
+  },
+  {
+    id: 71,
+    name: "Lumberjack",
+    price: "4 Elixir",
+    rarity: "Epic",
+    image: "rage_barbarian.png"
+  },
+  {
+    id: 72,
+    name: "Rage",
+    price: "2 Elixir",
+    rarity: "Epic",
+    image: "rage.png"
+  },
+  {
+    id: 73,
+    name: "Ram Rider",
+    price: "5 Elixir",
+    rarity: "Legendary",
+    image: "ram_rider.png"
+  },
+  {
+    id: 74,
+    name: "Rascals",
+    price: "5 Elixir",
+    rarity: "Common",
+    image: "rascals.png"
+  },
+  {
+    id: 75,
+    name: "Rocket",
+    price: "6 Elixir",
+    rarity: "Rare",
+    image: "rocket.png"
+  },
+  {
+    id: 76,
+    name: "Royal Delivery",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "royal_delivery.png"
+  },
+  {
+    id: 77,
+    name: "Royal Giant",
+    price: "6 Elixir",
+    rarity: "Common",
+    image: "royal_giant.png"
+  },
+  {
+    id: 78,
+    name: "Royal Hogs",
+    price: "5 Elixir",
+    rarity: "Rare",
+    image: "royal_hog.png"
+  },
+  {
+    id: 79,
+    name: "Royal Recruits",
+    price: "7 Elixir",
+    rarity: "Common",
+    image: "royal_recruits.png"
+  },
+  {
+    id: 80,
+    name: "Skeleton Barrel",
+    price: "3 Elixir",
+    rarity: "Common",
+    image: "skeleton_balloon.png"
+  },
+  {
+    id: 81,
+    name: "Skeleton Army",
+    price: "3 Elixir",
+    rarity: "Epic",
+    image: "skeleton_horde.png"
+  },
+  {
+    id: 82,
+    name: "Guards",
+    price: "3 Elixir",
+    rarity: "Epic",
+    image: "skeleton_warriors.png"
+  },
+  {
+    id: 83,
+    name: "Skeletons",
+    price: "1 Elixir",
+    rarity: "Common",
+    image: "skeletons.png"
+  },
+  {
+    id: 84,
+    name: "Ice Spirit",
+    price: "1 Elixir",
+    rarity: "Common",
+    image: "snow_spirits.png"
+  },
+  {
+    id: 85,
+    name: "Snowball",
+    price: "2 Elixir",
+    rarity: "Common",
+    image: "snowball.png"
+  },
+  {
+    id: 86,
+    name: "Three Musketeers",
+    price: "9 Elixir",
+    rarity: "Rare",
+    image: "three_musketeers.png"
+  },
+  {
+    id: 87,
+    name: "Tornado",
+    price: "3 Elixir",
+    rarity: "Epic",
+    image: "tornado.png"
+  },
+  {
+    id: 88,
+    name: "Valkyrie",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "valkyrie.png"
+  },
+  {
+    id: 89,
+    name: "Wall breakers",
+    price: "2 Elixir",
+    rarity: "Epic",
+    image: "wallbreaker.png"
+  },
+  {
+    id: 90,
+    name: "Wizard",
+    price: "5 Elixir",
+    rarity: "rare",
+    image: "wizard.png"
+  },
+  {
+    id: 91,
+    name: "Zap",
+    price: "2 Elixir",
+    rarity: "Common",
+    image: "zap.png"
+  },
+  {
+    id: 92,
+    name: "Sparky",
+    price: "6 Elixir",
+    rarity: "Legendary",
+    image: "zapMachine.png"
+  },
+  {
+    id: 93,
+    name: "Zappies",
+    price: "4 Elixir",
+    rarity: "Rare",
+    image: "zappies.png"
+  },
+
+
+
 ]
 
 export default mock;
